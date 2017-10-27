@@ -13,7 +13,7 @@ Step 1. Add the JitPack repository to your build file
  Step 2. Add the dependency
  
  	dependencies {
-	         compile 'com.github.Ct7Liang:NewProject:20171027100730'
+	         compile 'com.github.Ct7Liang:Develop:17-10-27-01'
  	}
    
   
