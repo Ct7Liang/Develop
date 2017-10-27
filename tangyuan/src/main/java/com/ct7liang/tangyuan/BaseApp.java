@@ -92,7 +92,7 @@ public abstract class BaseApp extends Application {
     /**
      * @return 返回App文件夹(File)
      */
-    public File getAppFolder(){
+    public static File getAppFolder(){
         if (mFile != null){
             return mFile;
         }else{
