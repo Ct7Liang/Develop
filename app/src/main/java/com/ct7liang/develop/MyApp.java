@@ -8,8 +8,8 @@ import com.squareup.leakcanary.RefWatcher;
 
 /**
  * Created by Administrator on 2017/10/26.
+ *
  */
-
 public class MyApp extends BaseApp {
 
     private RefWatcher mRefWatcher;

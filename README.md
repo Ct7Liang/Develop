@@ -17,7 +17,7 @@ allprojects {
 
 ```
 dependencies {
-    compile 'com.github.Ct7Liang:Develop:17-10-27-02'
+    compile 'com.github.Ct7Liang:Develop:17-11-01-01'
 }
 ```
 
