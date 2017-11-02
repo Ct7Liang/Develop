@@ -119,6 +119,7 @@ public abstract class BaseListFragment extends BaseFragment {
 
     @Override
     public void initFinish() {
+        isDone = true;
         page = 1;
         LoadData();
     }
@@ -318,5 +319,18 @@ public abstract class BaseListFragment extends BaseFragment {
      * @return ItemView
      */
     public abstract View setItemView(int position, View convertView, List data);
+
+    private boolean isDone; //在setUserVisibleHint()方法中用于判断该fragment是否已经完成了初始化
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        //先判断其他方法是否调用过, 是, 则执行此方法. 否, 则不执行此方法.
+        //此方法执行: page重置为1, 刷新界面数据
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser&&isDone){
+            showProgress();
+            page=1;
+            LoadData();
+        }
+    }
 
 }
