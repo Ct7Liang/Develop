@@ -119,9 +119,10 @@ public abstract class BaseListFragment extends BaseFragment {
 
     @Override
     public void initFinish() {
-        isDone = true;
-        page = 1;
-        LoadData();
+        if (!isDone){
+            page = 1;
+            LoadData();
+        }
     }
 
     public void showProgress(){
@@ -326,8 +327,9 @@ public abstract class BaseListFragment extends BaseFragment {
         //先判断其他方法是否调用过, 是, 则执行此方法. 否, 则不执行此方法.
         //此方法执行: page重置为1, 刷新界面数据
         super.setUserVisibleHint(isVisibleToUser);
-        if (isVisibleToUser&&isDone){
+        if (isVisibleToUser&&url!=null){
             showProgress();
+            isDone = true;
             page=1;
             LoadData();
         }
