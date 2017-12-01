@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
+
 import com.ct7liang.tangyuan.ui.ToastUtils;
-import com.jaeger.library.StatusBarUtil;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -57,7 +57,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     }
 
     protected void setStatusBar(){
-        StatusBarUtil.setColor(this, getResources().getColor(R.color.colorPrimaryDark), 0);
+
     }
 
     @Override
