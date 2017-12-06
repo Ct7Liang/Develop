@@ -156,9 +156,9 @@ public class GlideHelper {
 //                .fitCenter()//指定图片缩放类型为fitCenter, 缩放为制定大小, 可能不会填充完整
                 .centerCrop()// 指定图片缩放类型为centerCrop, 裁剪为指定大小, 可能图片显示不完整
 //                .skipMemoryCache(true)// 跳过内存缓存
-//                .diskCacheStrategy(DiskCacheStrategy.NONE)//跳过磁盘缓存
+                .diskCacheStrategy(DiskCacheStrategy.NONE)//跳过磁盘缓存
 //                .diskCacheStrategy(DiskCacheStrategy.SOURCE)//仅仅只缓存原来的全分辨率的图像
-                .diskCacheStrategy(DiskCacheStrategy.RESULT)//仅仅缓存最终的图像
+//                .diskCacheStrategy(DiskCacheStrategy.RESULT)//仅仅缓存最终的图像
 //                .diskCacheStrategy(DiskCacheStrategy.ALL)//缓存所有版本的图像
 //                .priority(Priority.HIGH)//指定优先级.Glide 将会用他们作为一个准则，并尽可能的处理这些请求，但是它不能保证所有的图片都会按照所要求的顺序加载。优先级排序:IMMEDIATE > HIGH > NORMAL >　LOW
                 .transform(getCircleTransform(activity))
@@ -175,9 +175,9 @@ public class GlideHelper {
 //                .fitCenter()//指定图片缩放类型为fitCenter, 缩放为制定大小, 可能不会填充完整
                 .centerCrop()// 指定图片缩放类型为centerCrop, 裁剪为指定大小, 可能图片显示不完整
 //                .skipMemoryCache(true)// 跳过内存缓存
-//                .diskCacheStrategy(DiskCacheStrategy.NONE)//跳过磁盘缓存
+                .diskCacheStrategy(DiskCacheStrategy.NONE)//跳过磁盘缓存
 //                .diskCacheStrategy(DiskCacheStrategy.SOURCE)//仅仅只缓存原来的全分辨率的图像
-                .diskCacheStrategy(DiskCacheStrategy.RESULT)//仅仅缓存最终的图像
+//                .diskCacheStrategy(DiskCacheStrategy.RESULT)//仅仅缓存最终的图像
 //                .diskCacheStrategy(DiskCacheStrategy.ALL)//缓存所有版本的图像
 //                .priority(Priority.HIGH)//指定优先级.Glide 将会用他们作为一个准则，并尽可能的处理这些请求，但是它不能保证所有的图片都会按照所要求的顺序加载。优先级排序:IMMEDIATE > HIGH > NORMAL >　LOW
                 .transform(getCircleTransform(activity))
@@ -194,9 +194,9 @@ public class GlideHelper {
 //                .fitCenter()//指定图片缩放类型为fitCenter, 缩放为制定大小, 可能不会填充完整
                 .centerCrop()// 指定图片缩放类型为centerCrop, 裁剪为指定大小, 可能图片显示不完整
 //                .skipMemoryCache(true)// 跳过内存缓存
-//                .diskCacheStrategy(DiskCacheStrategy.NONE)//跳过磁盘缓存
+                .diskCacheStrategy(DiskCacheStrategy.NONE)//跳过磁盘缓存
 //                .diskCacheStrategy(DiskCacheStrategy.SOURCE)//仅仅只缓存原来的全分辨率的图像
-                .diskCacheStrategy(DiskCacheStrategy.RESULT)//仅仅缓存最终的图像
+//                .diskCacheStrategy(DiskCacheStrategy.RESULT)//仅仅缓存最终的图像
 //                .diskCacheStrategy(DiskCacheStrategy.ALL)//缓存所有版本的图像
 //                .priority(Priority.HIGH)//指定优先级.Glide 将会用他们作为一个准则，并尽可能的处理这些请求，但是它不能保证所有的图片都会按照所要求的顺序加载。优先级排序:IMMEDIATE > HIGH > NORMAL >　LOW
                 .transform(getCircleTransform(activity))
@@ -213,9 +213,9 @@ public class GlideHelper {
 //                .fitCenter()//指定图片缩放类型为fitCenter, 缩放为制定大小, 可能不会填充完整
                 .centerCrop()// 指定图片缩放类型为centerCrop, 裁剪为指定大小, 可能图片显示不完整
 //                .skipMemoryCache(true)// 跳过内存缓存
-//                .diskCacheStrategy(DiskCacheStrategy.NONE)//跳过磁盘缓存
+                .diskCacheStrategy(DiskCacheStrategy.NONE)//跳过磁盘缓存
 //                .diskCacheStrategy(DiskCacheStrategy.SOURCE)//仅仅只缓存原来的全分辨率的图像
-                .diskCacheStrategy(DiskCacheStrategy.RESULT)//仅仅缓存最终的图像
+//                .diskCacheStrategy(DiskCacheStrategy.RESULT)//仅仅缓存最终的图像
 //                .diskCacheStrategy(DiskCacheStrategy.ALL)//缓存所有版本的图像
 //                .priority(Priority.HIGH)//指定优先级.Glide 将会用他们作为一个准则，并尽可能的处理这些请求，但是它不能保证所有的图片都会按照所要求的顺序加载。优先级排序:IMMEDIATE > HIGH > NORMAL >　LOW
                 .transform(getCircleTransform(activity))
