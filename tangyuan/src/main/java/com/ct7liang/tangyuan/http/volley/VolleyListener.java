@@ -25,7 +25,9 @@ public class VolleyListener implements Response.Listener<String> {
     @Override
     public void onResponse(String s) {
         LogUtils.write(desc + "返回数据: " + s);
-        listener.onSuccess(s);
+        if (listener!=null){  //防止数据加载结束之前,页面返回, listener置空, 造成空指针异常
+            listener.onSuccess(s);
+        }
     }
 
     public interface OnSuccess{

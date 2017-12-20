@@ -26,7 +26,9 @@ public class VolleyErrorListener implements Response.ErrorListener {
     @Override
     public void onErrorResponse(VolleyError volleyError) {
         LogUtils.write(desc + "请求异常: " + volleyError.toString());
-        listener.onError(volleyError);
+        if (listener != null){  //防止数据加载结束之前,页面返回, listener置空, 造成空指针异常
+            listener.onError(volleyError);
+        }
     }
 
     public interface OnError{
