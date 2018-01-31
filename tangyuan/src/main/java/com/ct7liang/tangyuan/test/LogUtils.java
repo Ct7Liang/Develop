@@ -12,6 +12,10 @@ public class LogUtils {
 
     private static String TAG = "Ct7";
 
+    public static void setIsShowLog(boolean isShow){
+        isShowLog = isShow;
+    }
+
     /**
      *  项目流程打印
      * @param message 信息
