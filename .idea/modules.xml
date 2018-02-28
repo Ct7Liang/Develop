@@ -3,9 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Develop.iml" filepath="$PROJECT_DIR$/Develop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Develop.iml" filepath="$PROJECT_DIR$/Develop.iml" />
       <module fileurl="file://$PROJECT_DIR$/Developp.iml" filepath="$PROJECT_DIR$/Developp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tangyuan/tangyuan.iml" filepath="$PROJECT_DIR$/tangyuan/tangyuan.iml" />
       <module fileurl="file://$PROJECT_DIR$/tangyuan/tangyuan.iml" filepath="$PROJECT_DIR$/tangyuan/tangyuan.iml" />
       <module fileurl="file://$PROJECT_DIR$/tangyuan/tangyuan.iml" filepath="$PROJECT_DIR$/tangyuan/tangyuan.iml" />
     </modules>

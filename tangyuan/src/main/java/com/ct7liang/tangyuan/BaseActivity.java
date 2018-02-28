@@ -1,6 +1,7 @@
 package com.ct7liang.tangyuan;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,12 +31,18 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     private BaseApp mBaseApp;
     public ArrayList<WeakReference<Activity>> temp;
 
+    public void getCreateParams(Bundle savedInstanceState){
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         //去掉系统自带的ActionBar
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
+
+        getCreateParams(savedInstanceState);
 
         mAct = this;
 
@@ -127,18 +134,34 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
      */
     public void initNetDataFinish(){}
 
+
+    private Dialog pd;
+
     /**
      * 显示一个加载框
      * @param act BaseActivity
      */
     public void showProgressBar(android.app.Activity act){
-        if (mPd != null && mPd.isShowing()){
 
-        }else {
-            mPd = new ProgressDialog(act);
-            mPd.setMessage(getProgressContent());
-            mPd.show();
+        if (pd==null){
+            pd = new ProgressDialog(this);
+            pd.requestWindowFeature(1);
+            pd = ProgressDialog.show(this, "", "请稍后", true, false);
+        }else{
+            if (!pd.isShowing()){
+                pd = new ProgressDialog(this);
+                pd.requestWindowFeature(1);
+                pd = ProgressDialog.show(this, "", "请稍后", true, false);
+            }
         }
+
+//        if (mPd != null && mPd.isShowing()){
+//
+//        }else {
+//            mPd = new ProgressDialog(act);
+//            mPd.setMessage(getProgressContent());
+//            mPd.show();
+//        }
     }
 
     /**
@@ -146,9 +169,13 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
      * @param act BaseActivity
      */
     public void cancelProgressBar(android.app.Activity act){
-        if (mPd!=null && mPd.isShowing()) {
-            mPd.dismiss();
+        if(pd != null) {
+            pd.dismiss();
         }
+
+//        if (mPd!=null && mPd.isShowing()) {
+//            mPd.dismiss();
+//        }
     }
 
     public String getProgressContent(){
