@@ -65,7 +65,7 @@ public abstract class BaseApp extends Application {
         initOther();
     }
 
-    private void initFirst() {
+    public void initFirst() {
 
     }
 
