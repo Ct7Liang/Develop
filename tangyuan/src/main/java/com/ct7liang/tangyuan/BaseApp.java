@@ -48,6 +48,8 @@ public abstract class BaseApp extends Application {
     public void onCreate() {
         super.onCreate();
 
+        initFirst();
+
         actList = new ArrayList<>();
 
         instance = this;
@@ -61,6 +63,10 @@ public abstract class BaseApp extends Application {
         createAppFolder(setFolderName());
 
         initOther();
+    }
+
+    private void initFirst() {
+
     }
 
     public abstract String setFolderName();
